@@ -7,13 +7,6 @@ export default {
    * @returns {Promise<Response>}
    */
   async fetch(request, env) {
-    const ip = request.headers.get("CF-Connecting-IP");
-
-    const { success: rlSuccess } = await env.RL.limit({ key: ip });
-    if (!rlSuccess) {
-      return new Response(null, { status: 429 });
-    }
-
     const url = new URL(request.url);
 
     if (

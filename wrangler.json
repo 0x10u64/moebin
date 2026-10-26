@@ -9,15 +9,5 @@
       "database_name": "moebin-d1",
       "database_id": "334a8b7a-0c0d-475f-be13-ba2b0c717996"
     }
-  ],
-  "ratelimits": [
-    {
-      "name": "RL",
-      "namespace_id": "1",
-      "simple": {
-        "limit": 50,
-        "period": 10
-      }
-    }
   ]
 }
