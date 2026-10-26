@@ -9,6 +9,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
   color: hsl(300, 25%, 75%);
   background: #000;
   font-family:
@@ -25,11 +28,19 @@ body {
     sans-serif;
 }
 
+.body-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
+  letter-spacing: -2px;
   color: hsl(300, 100%, 90%);
 }
 
 main {
+  width: 100%;
   max-width: 40rem;
   margin: 0 auto;
   padding: 1rem;
@@ -47,21 +58,35 @@ footer {
   padding-block: 3rem;
 }
 
+.qt-container {
+  position: relative;
+  height: 14rem;
+}
+
+#qt {
+  position: absolute;
+  bottom: 0%;
+  right: 10%;
+  width: auto;
+  max-height: 100%;
+  height: 100%;
+}
+
 form,
-div.container {
+.v-container {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   gap: 8px;
 }
 
-div.form-pair {
+.form-pair {
   width: 100%;
   display: flex;
   gap: 8px;
 }
 
-div.form-pair > :first-child {
+.form-pair > :first-child {
   flex: 1;
 }
 
@@ -74,9 +99,8 @@ input {
 }
 
 textarea {
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 24rem;
+  height: 12rem;
+  resize: none;
 }
 
 button {
@@ -88,7 +112,7 @@ button,
 textarea,
 input {
   color: inherit;
-  background: inherit;
+  background: #000;
   border: 1px solid hsl(300, 25%, 25%);
   border-radius: 8px;
   outline: 0 solid hsl(300deg, 25%, 15%);

@@ -7,33 +7,39 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>moebin</h1>
-      <p>Easy encrypted text file hosting</p>
-    </header>
+    <div class="body-content">
+      <header>
+        <h1>moebin</h1>
+        <p>Easy encrypted text file hosting</p>
+      </header>
 
-    <main>
-      <p id="status" hidden></p>
-      <pre id="content" hidden></pre>
+      <main>
+        <p id="status" hidden></p>
+        <pre id="content" hidden></pre>
 
-      <form id="deleteForm" hidden>
-        <label for="delete-key">Delete key</label>
-        <div class="form-pair">
-          <input id="delete-key" name="delete-key" type="text" required />
-          <button type="submit">Delete</button>
+        <form id="deleteForm" hidden>
+          <label for="delete-key">Delete key</label>
+          <div class="form-pair">
+            <input id="delete-key" name="delete-key" type="text" required />
+            <button type="submit">Delete</button>
+          </div>
+        </form>
+      </main>
+
+      <footer>
+        <div>
+          <a href="/">Home</a>
+          -
+          <a href="/faq">FAQ</a>
+          -
+          <a target="_blank" href="https://github.com/0x10u64/moebin">Source</a>
         </div>
-      </form>
-    </main>
+      </footer>
+    </div>
 
-    <footer>
-      <div>
-        <a href="/">Home</a>
-        -
-        <a href="/faq">FAQ</a>
-        -
-        <a target="_blank" href="https://github.com/0x10u64/moebin">Source</a>
-      </div>
-    </footer>
+    <div class="qt-container">
+      <img id="qt" src="/img/qt.png" alt="qt" />
+    </div>
 
     <script type="module" src="/js/paste.js"></script>
   </body>

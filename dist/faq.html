@@ -7,74 +7,80 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>moebin</h1>
-      <p>Easy encrypted text file hosting</p>
-    </header>
+    <div class="body-content">
+      <header>
+        <h1>moebin</h1>
+        <p>Easy encrypted text file hosting</p>
+      </header>
 
-    <main>
-      <ol class="gaps">
-        <li>
-          <strong>What is this?</strong>
-          <p>
-            This site lets you create and share text pastes privately, more or
-            less. It can also be used for general text file hosting, for
-            non-sensitive data.
-          </p>
-        </li>
-        <li>
-          <strong>How is my paste encrypted?</strong>
-          <p>
-            Your browser encrypts the text with AES-GCM before sending it. The
-            decryption key is included in the link after the # character and
-            never leaves your device. Browsers do not send that part of the link
-            to the server, and the site removes the key from the address bar
-            after loading the paste.
-          </p>
-        </li>
-        <li>
-          <strong>What info do you store?</strong>
-          <p>
-            The paste service receives and stores encrypted content, an
-            expiration time, and a hash of the delete key. Nothing else is
-            stored and even I can't see what you upload.
-          </p>
-        </li>
-        <li>
-          <strong>Can anyone who has the link read my paste?</strong>
-          <p>
-            Anyone with the complete link can decrypt and read the paste, so
-            only share it with people you trust. Treat the link as a password.
-          </p>
-        </li>
-        <li>
-          <strong>How long does a paste last?</strong>
-          <p>
-            You can set an expiration from 1 minute to 92,160 minutes (64 days).
-            After it expires, the paste can no longer be opened.
-          </p>
-        </li>
-        <li>
-          <strong>
-            Could I use this for passwords or other highly sensitive content?
-          </strong>
-          <p>
-            No!!! Anyone who gets the complete share link can read the paste.
-            You shouldn't store passwords, secrets, or anything else that would
-            cause harm if shared.
-          </p>
-        </li>
-      </ol>
-    </main>
+      <main>
+        <ol class="gaps">
+          <li>
+            <strong>What is this?</strong>
+            <p>
+              This site lets you create and share text pastes privately, more or
+              less. It can also be used for general text file hosting, for
+              non-sensitive data.
+            </p>
+          </li>
+          <li>
+            <strong>How is my paste encrypted?</strong>
+            <p>
+              Your browser encrypts the text with AES-GCM before sending it. The
+              decryption key is included in the link after the # character and
+              never leaves your device. Browsers do not send that part of the
+              link to the server, and the site removes the key from the address
+              bar after loading the paste.
+            </p>
+          </li>
+          <li>
+            <strong>What info do you store?</strong>
+            <p>
+              The paste service receives and stores encrypted content, an
+              expiration time, and a hash of the delete key. Nothing else is
+              stored and even I can't see what you upload.
+            </p>
+          </li>
+          <li>
+            <strong>Can anyone who has the link read my paste?</strong>
+            <p>
+              Anyone with the complete link can decrypt and read the paste, so
+              only share it with people you trust. Treat the link as a password.
+            </p>
+          </li>
+          <li>
+            <strong>How long does a paste last?</strong>
+            <p>
+              You can set an expiration from 1 minute to 92,160 minutes (64
+              days). After it expires, the paste can no longer be opened.
+            </p>
+          </li>
+          <li>
+            <strong>
+              Could I use this for passwords or other highly sensitive content?
+            </strong>
+            <p>
+              No!!! Anyone who gets the complete share link can read the paste.
+              You shouldn't store passwords, secrets, or anything else that
+              would cause harm if shared.
+            </p>
+          </li>
+        </ol>
+      </main>
 
-    <footer>
-      <div>
-        <a href="/">Home</a>
-        -
-        <a href="/faq">FAQ</a>
-        -
-        <a target="_blank" href="https://github.com/0x10u64/moebin">Source</a>
-      </div>
-    </footer>
+      <footer>
+        <div>
+          <a href="/">Home</a>
+          -
+          <a href="/faq">FAQ</a>
+          -
+          <a target="_blank" href="https://github.com/0x10u64/moebin">Source</a>
+        </div>
+      </footer>
+    </div>
+
+    <div class="qt-container">
+      <img id="qt" src="/img/qt.png" alt="qt" />
+    </div>
   </body>
 </html>

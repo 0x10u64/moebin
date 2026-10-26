@@ -7,55 +7,61 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>moebin</h1>
-      <p>Easy encrypted text file hosting</p>
-    </header>
+    <div class="body-content">
+      <header>
+        <h1>moebin</h1>
+        <p>Easy encrypted text file hosting</p>
+      </header>
 
-    <main>
-      <form id="paste-form">
-        <label for="text">Paste content</label><br />
-        <textarea id="text" required>Hello World!</textarea><br />
-        <label for="expires-in">Expires in (minutes)</label>
-        <div class="form-pair">
-          <input
-            id="expires-in"
-            type="number"
-            min="1"
-            max="92160"
-            step="1"
-            value="1"
-            required
-          />
-          <button type="submit">Create paste</button>
+      <main>
+        <form id="paste-form">
+          <label for="text">Paste content</label><br />
+          <textarea id="text" required>Hello World!</textarea><br />
+          <label for="expires-in">Expires in (minutes)</label>
+          <div class="form-pair">
+            <input
+              id="expires-in"
+              type="number"
+              min="1"
+              max="92160"
+              step="1"
+              value="1"
+              required
+            />
+            <button type="submit">Create paste</button>
+          </div>
+        </form>
+
+        <p id="status"></p>
+
+        <div id="result" class="v-container" hidden>
+          <label for="share-link">Share link</label>
+          <div class="form-pair">
+            <input id="share-link" readonly />
+            <button id="copy-share-link" type="button">Copy</button>
+          </div>
+          <label for="delete-key">Delete key</label>
+          <div class="form-pair">
+            <input id="delete-key" readonly />
+            <button id="copy-delete-key" type="button">Copy</button>
+          </div>
         </div>
-      </form>
+      </main>
 
-      <p id="status"></p>
+      <footer>
+        <p>
+          <a href="/">Home</a>
+          -
+          <a href="/faq">FAQ</a>
+          -
+          <a target="_blank" href="https://github.com/0x10u64/moebin">Source</a>
+        </p>
+      </footer>
+    </div>
 
-      <div id="result" class="container" hidden>
-        <label for="share-link">Share link</label>
-        <div class="form-pair">
-          <input id="share-link" readonly />
-          <button id="copy-share-link" type="button">Copy</button>
-        </div>
-        <label for="delete-key">Delete key</label>
-        <div class="form-pair">
-          <input id="delete-key" readonly />
-          <button id="copy-delete-key" type="button">Copy</button>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div>
-        <a href="/">Home</a>
-        -
-        <a href="/faq">FAQ</a>
-        -
-        <a target="_blank" href="https://github.com/0x10u64/moebin">Source</a>
-      </div>
-    </footer>
+    <div class="qt-container">
+      <img id="qt" src="/img/qt.png" alt="qt" />
+    </div>
 
     <script type="module" src="/js/index.js"></script>
   </body>
