@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "moebin",
+  "compatibility_date": "2026-10-19",
+  "pages_build_output_dir": "./dist",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "moebin-d1",
+      "database_id": "334a8b7a-0c0d-475f-be13-ba2b0c717996"
+    }
+  ]
+}

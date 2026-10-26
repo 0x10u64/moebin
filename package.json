@@ -1,0 +1,18 @@
+{
+  "name": "moebin",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "0x10u64",
+    "url": "https://github.com/0x10u64"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "wrangler": "^4.151.2"
+  },
+  "scripts": {
+    "dev": "npx wrangler pages dev",
+    "deploy": "npx wrangler pages deploy"
+  }
+}
